@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.cta-button');
+    const tradeButtons = document.querySelectorAll('.trade-button');
 
-    buttons.forEach(button => {
+    tradeButtons.forEach(button => {
         button.addEventListener('click', () => {
-            alert('Button clicked! This can be linked to trading functionality.');
+            alert('Trading functionality coming soon!');
         });
+    });
+
+    const ctaButton = document.querySelector('.cta-button');
+    ctaButton.addEventListener('click', () => {
+        window.location.href = '#trade';
     });
 });
